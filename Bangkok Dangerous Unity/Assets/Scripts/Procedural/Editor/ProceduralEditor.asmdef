@@ -1,0 +1,22 @@
+{
+    "name": "ProceduralEditor",
+    "rootNamespace": "",
+    "references": [
+        "Procedural",
+        "Splines",
+        "Utilities.Splines",
+        "Utilities",
+        "WirePoleSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

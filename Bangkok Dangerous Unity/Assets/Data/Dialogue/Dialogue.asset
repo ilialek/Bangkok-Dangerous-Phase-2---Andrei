@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d24f4b62f072484ba298583e27002d8, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  GraphNodeData:
+  - Title: Entry
+    Guid:
+      m_Key: 71b35c37-54df-475f-85c2-2c37555b01c4
+    Position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: e44b75f7-2c11-4b59-8e77-05b797ab496b
+    Position:
+      serializedVersion: 2
+      x: 309
+      y: 0
+      width: 265
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: c353817a-e00c-4f5f-831e-47cfb9f2ec83
+    Position:
+      serializedVersion: 2
+      x: 596
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 5fe69f29-270f-437e-acf9-bb5c01c225b8
+    Position:
+      serializedVersion: 2
+      x: 900
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 45da0691-9cf6-4b7f-b685-2282f686d6b5
+    Position:
+      serializedVersion: 2
+      x: 1199
+      y: 0
+      width: 265
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 43d6c7e9-ddff-4db7-af6c-2246cfb60f67
+    Position:
+      serializedVersion: 2
+      x: 1492
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: d9999e1c-b759-44fb-b5b8-d71adcd9b4a5
+    Position:
+      serializedVersion: 2
+      x: 1795
+      y: 0
+      width: 341
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 24fbb77a-1237-4f4b-a676-509af9589016
+    Position:
+      serializedVersion: 2
+      x: 2170
+      y: 0
+      width: 312
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 3a724f37-d770-46e8-92ea-d1812864d68b
+    Position:
+      serializedVersion: 2
+      x: 2510
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 5a2a7caf-55db-4d6a-9cbf-fa5328ec8bf6
+    Position:
+      serializedVersion: 2
+      x: 2809
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 51259518-c2ce-430d-8827-052e5c1f6c23
+    Position:
+      serializedVersion: 2
+      x: 3108
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 912553d3-3bb0-4026-8362-0f4663ce1b4f
+    Position:
+      serializedVersion: 2
+      x: 3408
+      y: 0
+      width: 373
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 492eaf96-21da-4668-9575-c21a1531e263
+    Position:
+      serializedVersion: 2
+      x: 3813
+      y: 0
+      width: 304
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 6b5b0bb3-462c-4a5d-9985-44cdb8e87772
+    Position:
+      serializedVersion: 2
+      x: 4160
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: f412fa24-b07f-451f-8798-88a5a34fd627
+    Position:
+      serializedVersion: 2
+      x: 4454
+      y: 0
+      width: 382
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: ca54c141-cac9-4941-8c79-4a3e9490894c
+    Position:
+      serializedVersion: 2
+      x: 4866
+      y: 0
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 7ea5c8fc-3146-4aee-bb75-560eda4bee81
+    Position:
+      serializedVersion: 2
+      x: 5165
+      y: 0
+      width: 280
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 492b1631-c890-42f3-b9f9-9fe7b77ed18b
+    Position:
+      serializedVersion: 2
+      x: 5476
+      y: 0
+      width: 265
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 76c144f7-40dd-4361-a6a1-d600c6f684c9
+    Position:
+      serializedVersion: 2
+      x: 5771
+      y: -1
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: e1f6498c-c887-4c09-9520-b666f0e78e43
+    Position:
+      serializedVersion: 2
+      x: 6070
+      y: -1
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 6d547020-ce08-4b1e-a2a0-355fdb3db0f3
+    Position:
+      serializedVersion: 2
+      x: 6368
+      y: -1
+      width: 265
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: 9adcb3ed-b290-4bc6-bf8f-7736b279a046
+    Position:
+      serializedVersion: 2
+      x: 6661
+      y: -1
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Text
+    Guid:
+      m_Key: ed4e0d96-9091-447d-9e91-768e3772f1f8
+    Position:
+      serializedVersion: 2
+      x: 6973
+      y: -2
+      width: 271
+      height: 124
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  NodeEntry: 0
+  m_SerializedData:
+  - Data: '{"Text":{"Value":"Sit down, Narin"},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":""}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"e44b75f7-2c11-4b59-8e77-05b797ab496b"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"(Narin sits.) "},"CharacterGuid":{"Value":"f1cecb3e678ea174a8dfc0b3e100f9c1"},"InPort":{"Port":{"TargetNode":{"m_Key":"71b35c37-54df-475f-85c2-2c37555b01c4"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"c353817a-e00c-4f5f-831e-47cfb9f2ec83"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":" I hear the gym is full again."},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":"e44b75f7-2c11-4b59-8e77-05b797ab496b"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"5fe69f29-270f-437e-acf9-bb5c01c225b8"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"The new generation\u2026 they listen to you.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"c353817a-e00c-4f5f-831e-47cfb9f2ec83\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"45da0691-9cf6-4b7f-b685-2282f686d6b5\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"They\u2019re hungry. That\u2019s good.\"},\"CharacterGuid\":{\"Value\":\"f1cecb3e678ea174a8dfc0b3e100f9c1\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"5fe69f29-270f-437e-acf9-bb5c01c225b8\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"43d6c7e9-ddff-4db7-af6c-2246cfb60f67\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"It is."},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":"45da0691-9cf6-4b7f-b685-2282f686d6b5"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"d9999e1c-b759-44fb-b5b8-d71adcd9b4a5"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"And I know you\u2019ve been spending more time
+      there than here.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"43d6c7e9-ddff-4db7-af6c-2246cfb60f67\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"24fbb77a-1237-4f4b-a676-509af9589016\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"Once this last mission is over\u2026 I\u2019ll
+      have even more time.\"},\"CharacterGuid\":{\"Value\":\"f1cecb3e678ea174a8dfc0b3e100f9c1\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"d9999e1c-b759-44fb-b5b8-d71adcd9b4a5\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"3a724f37-d770-46e8-92ea-d1812864d68b\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"I always thought you\u2019d take my place one day.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"24fbb77a-1237-4f4b-a676-509af9589016\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"5a2a7caf-55db-4d6a-9cbf-fa5328ec8bf6\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"But you\u2019ve made your choice.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"3a724f37-d770-46e8-92ea-d1812864d68b\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"51259518-c2ce-430d-8827-052e5c1f6c23\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"And I\u2019ll respect it. \"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"5a2a7caf-55db-4d6a-9cbf-fa5328ec8bf6\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"912553d3-3bb0-4026-8362-0f4663ce1b4f\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"For now, you\u2019ll oversee the merchandise transfer
+      at the warehouse.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"51259518-c2ce-430d-8827-052e5c1f6c23\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"492eaf96-21da-4668-9575-c21a1531e263\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"There are rumors\u2026 a new gang pushing into
+      Bangkok.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"912553d3-3bb0-4026-8362-0f4663ce1b4f\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"6b5b0bb3-462c-4a5d-9985-44cdb8e87772\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"Careless people. Ambitious."},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":"492eaf96-21da-4668-9575-c21a1531e263"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"f412fa24-b07f-451f-8798-88a5a34fd627"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"Then I want Phakdi with me. If it\u2019s dangerous,
+      we work best together.\"},\"CharacterGuid\":{\"Value\":\"f1cecb3e678ea174a8dfc0b3e100f9c1\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"6b5b0bb3-462c-4a5d-9985-44cdb8e87772\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"ca54c141-cac9-4941-8c79-4a3e9490894c\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\" Not this time. He\u2019s tied up elsewhere. \"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"f412fa24-b07f-451f-8798-88a5a34fd627\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"7ea5c8fc-3146-4aee-bb75-560eda4bee81\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"If he finishes early, I\u2019ll send him. Don\u2019t
+      count on it.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"ca54c141-cac9-4941-8c79-4a3e9490894c\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"492b1631-c890-42f3-b9f9-9fe7b77ed18b\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"Understood."},"CharacterGuid":{"Value":"f1cecb3e678ea174a8dfc0b3e100f9c1"},"InPort":{"Port":{"TargetNode":{"m_Key":"7ea5c8fc-3146-4aee-bb75-560eda4bee81"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"76c144f7-40dd-4361-a6a1-d600c6f684c9"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"The cargo is valuable. "},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":"492b1631-c890-42f3-b9f9-9fe7b77ed18b"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"e1f6498c-c887-4c09-9520-b666f0e78e43"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"But I don\u2019t need to tell you that. \"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"76c144f7-40dd-4361-a6a1-d600c6f684c9\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"6d547020-ce08-4b1e-a2a0-355fdb3db0f3\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"I won\u2019t disappoint you.\"},\"CharacterGuid\":{\"Value\":\"f1cecb3e678ea174a8dfc0b3e100f9c1\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"e1f6498c-c887-4c09-9520-b666f0e78e43\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"9adcb3ed-b290-4bc6-bf8f-7736b279a046\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Text":{"Value":"I know. "},"CharacterGuid":{"Value":"36c4b8a2c3891bb43b4e79b7667e5d50"},"InPort":{"Port":{"TargetNode":{"m_Key":"6d547020-ce08-4b1e-a2a0-355fdb3db0f3"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"ed4e0d96-9091-447d-9e91-768e3772f1f8"}}}}'
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: "{\"Text\":{\"Value\":\"That\u2019s what worries me.\"},\"CharacterGuid\":{\"Value\":\"36c4b8a2c3891bb43b4e79b7667e5d50\"},\"InPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"9adcb3ed-b290-4bc6-bf8f-7736b279a046\"}}},\"OutPort\":{\"Port\":{\"TargetNode\":{\"m_Key\":\"\"}}}}"
+    m_TypeName: Dialogue.TextNode, Dialogue, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

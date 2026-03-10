@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ab20ad233eb6d42a46028b4f452e13, type: 3}
+  m_Name: SpeedRice
+  m_EditorClassIdentifier: 
+  itemName: 7/11 Curry
+  itemSprite: {fileID: 21300000, guid: 5514325d4d48b274aa45b15c370494fa, type: 3}
+  itemDescription: Convenient curry that increases movement speed and provides healing
+  healAmount: 15
+  healDuration: 15
+  healTickRate: 0.5
+  speedMultiplier: 1.3
+  damageMultiplier: 1
+  activeParticleEffect: {fileID: 1695309593033449803, guid: 77b3b4080294f8e4f96c95808acead2d, type: 3}

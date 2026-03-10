@@ -1,0 +1,12 @@
+GridBackground {
+    --grid-background-color: #303030;
+    --line-color: rgba(200, 200, 200, .1);
+    --thick-line-color: rgba(200, 200, 200, .1);
+    --spacing: 10;
+}
+
+.node-field{
+    background-color: rgba(63, 63, 63, 0.5);
+    margin: 0px;
+    padding: 3px;
+}

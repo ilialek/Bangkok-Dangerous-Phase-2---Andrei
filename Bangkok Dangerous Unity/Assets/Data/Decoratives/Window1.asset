@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f910c4ff028c3b409b82a14d447a8e5, type: 3}
+  m_Name: Window1
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 6813164274397592952, guid: 63bd489710976274a93c25b3a5e6109a, type: 3}
+  BoundingBox:
+    m_Center: {x: -0.06970501, y: 2.3812137, z: -0.002018001}
+    m_Extent: {x: 2.48349, y: 2.3460565, z: 0.075123996}
+  Direction: {x: 0, y: 0, z: -1}
+  Attachment: {fileID: 11400000, guid: c6a0498c893600444ba4e5cc8173ca80, type: 2}
+  Offset: {x: 0, y: 0, z: 0.001}
+  RequiresCut: 0
+  CutScale: {x: 1, y: 0.8}
+  Stretch: 1
+  OrientedBounds:
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+    WorldBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}

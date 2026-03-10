@@ -1,0 +1,16 @@
+{
+    "name": "FlowGraph",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5f65adc24d9ccf74c8077339b92e929e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+{
+    "name": "WirePoleSystem.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:de91a3143cb9f5c41ac36fed9262cb69",
+        "GUID:cc0309621eb072e418e16256ab13c245",
+        "GUID:5f65adc24d9ccf74c8077339b92e929e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

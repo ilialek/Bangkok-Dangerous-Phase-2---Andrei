@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0e8b2fe7b5cb14e913e0e0792a47e3, type: 3}
+  m_Name: Quest
+  m_EditorClassIdentifier: 
+  GraphNodeData:
+  - Title: Entry
+    Guid:
+      m_Key: 440778c8-a3d2-44bb-9f18-dfd412ed6a26
+    Position:
+      serializedVersion: 2
+      x: 28
+      y: -30
+      width: 288
+      height: 123
+    m_TypeName: Quest.MissionNode, Quest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Title: Mission
+    Guid:
+      m_Key: 7e17dccc-86eb-47b3-bf6e-20c369cd6309
+    Position:
+      serializedVersion: 2
+      x: 355
+      y: -30
+      width: 237
+      height: 123
+    m_TypeName: Quest.MissionNode, Quest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  NodeEntry: 0
+  m_SerializedData:
+  - Data: '{"Title":{"Value":"Hitting your enemias"},"Description":{"Value":"Hit
+      10 enemies with a stick "},"InPort":{"Port":{"TargetNode":{"m_Key":""}}},"OutPort":{"Port":{"TargetNode":{"m_Key":"7e17dccc-86eb-47b3-bf6e-20c369cd6309"}}}}'
+    m_TypeName: Quest.MissionNode, Quest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Data: '{"Title":{"Value":"Escape"},"Description":{"Value":"Escape the thugs"},"InPort":{"Port":{"TargetNode":{"m_Key":"440778c8-a3d2-44bb-9f18-dfd412ed6a26"}}},"OutPort":{"Port":{"TargetNode":{"m_Key":""}}}}'
+    m_TypeName: Quest.MissionNode, Quest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

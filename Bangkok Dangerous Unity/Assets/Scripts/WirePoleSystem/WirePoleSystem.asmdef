@@ -1,0 +1,19 @@
+{
+    "name": "WirePoleSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:cc0309621eb072e418e16256ab13c245",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:5f65adc24d9ccf74c8077339b92e929e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

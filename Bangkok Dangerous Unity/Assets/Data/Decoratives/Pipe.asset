@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f910c4ff028c3b409b82a14d447a8e5, type: 3}
+  m_Name: Pipe
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 1004620741233530638, guid: 9a2282ecc09eca443a03490d7a770046, type: 3}
+  BoundingBox:
+    m_Center: {x: -0.172526, y: 3.9071515, z: 0.00035149604}
+    m_Extent: {x: 0.331267, y: 3.5070045, z: 0.24454251}
+  Direction: {x: -1, y: 0, z: 0}
+  Attachment: {fileID: 0}
+  Offset: {x: 0, y: 0, z: 0}
+  RequiresCut: 0
+  CutScale: {x: 1, y: 1}
+  Stretch: 0
+  OrientedBounds:
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+    WorldBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}

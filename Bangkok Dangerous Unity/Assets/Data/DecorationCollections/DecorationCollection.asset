@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9673bd942efe451884eccf04e1739a01, type: 3}
+  m_Name: DecorationCollection
+  m_EditorClassIdentifier: 
+  DecorationPrefabs:
+  - {fileID: 11400000, guid: 02a74ab866fa3c84cbcee6d8448a0c39, type: 2}
+  - {fileID: 11400000, guid: 4a86c6ec2e0327744a6fae079b92c8b7, type: 2}
+  - {fileID: 11400000, guid: ef5632d7ed754c84b9350303553a8cf0, type: 2}
+  WirePoles:
+  - {fileID: 11400000, guid: f1f2dd3c27cc16e4fb9abe3d1d11c086, type: 2}
+  - {fileID: 11400000, guid: b912d0fc06f08e4459f8def28c8cee7b, type: 2}
+  - {fileID: 11400000, guid: 3706d5b0ef1f74f4f91f4116c8b7ddc9, type: 2}
