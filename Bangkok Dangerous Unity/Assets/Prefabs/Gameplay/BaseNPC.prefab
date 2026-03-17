@@ -2049,6 +2049,8 @@ GameObject:
   - component: {fileID: 8543751780752043488}
   - component: {fileID: 1884434001669057030}
   - component: {fileID: 147123479446575806}
+  - component: {fileID: 8673752592046346212}
+  - component: {fileID: 6174748840503840282}
   m_Layer: 6
   m_Name: BaseNPC
   m_TagString: Enemy
@@ -2161,16 +2163,16 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000006
-  m_Speed: 3.5
+  m_Speed: 1.2
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0.3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &147123479446575806
@@ -2185,6 +2187,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd3475870794a8429faed69e6e44cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  destinations: []
+  randomOrder: 1
+  waitTimeAtPoint: 5
+  arriveThreshold: 0.25
+--- !u!95 &8673752592046346212
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930752882633895449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c619810473fb0e04dae8cb5a6fbe7937, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6174748840503840282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930752882633895449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c722d7bc8a8ac664bb13b3110d3f35ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  animator: {fileID: 0}
+  speedParameter: Speed
+  maxMoveSpeed: 2
+  dampTime: 0.15
 --- !u!1 &6954868644685581536
 GameObject:
   m_ObjectHideFlags: 0
