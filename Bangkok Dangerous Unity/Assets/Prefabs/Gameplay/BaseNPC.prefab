@@ -868,7 +868,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3212016633857705852}
-  - component: {fileID: 4321053336982170051}
   m_Layer: 0
   m_Name: Reaction (1)
   m_TagString: Untagged
@@ -893,28 +892,6 @@ Transform:
   - {fileID: 5021076380449592888}
   m_Father: {fileID: 846927287841163297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4321053336982170051
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818733614607781317}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 748f579214672b84e9f10773ae78b4db, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3563dd7a10640c540a2d9413b3deeb4b, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1923430038177271400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,9 +2141,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.50000006
   m_Speed: 1.2
-  m_Acceleration: 8
+  m_Acceleration: 2
   avoidancePriority: 50
-  m_AngularSpeed: 360
+  m_AngularSpeed: 720
   m_StoppingDistance: 0.3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -2188,7 +2165,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
-  destinations: []
+  destinations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   randomOrder: 1
   waitTimeAtPoint: 5
   arriveThreshold: 0.25
@@ -2201,7 +2188,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930752882633895449}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 748f579214672b84e9f10773ae78b4db, type: 3}
   m_Controller: {fileID: 9100000, guid: c619810473fb0e04dae8cb5a6fbe7937, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -2229,7 +2216,7 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   speedParameter: Speed
-  maxMoveSpeed: 2
+  maxMoveSpeed: 1.2
   dampTime: 0.15
 --- !u!1 &6954868644685581536
 GameObject:
