@@ -30,7 +30,7 @@ public class RoamZone : MonoBehaviour
     private void OnDrawGizmos()
     {
         BoxCollider col = GetComponent<BoxCollider>();
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.darkOrange;
         Gizmos.matrix = transform.localToWorldMatrix;
         Gizmos.DrawWireCube(col.center, col.size);
     }
