@@ -16,10 +16,7 @@ public class NPCLookAtTarget : MonoBehaviour
 
     private void Start()
     {
-        if (head != null)
-        {
-            defaultLocalRotation = head.localRotation;
-        }
+        defaultLocalRotation = head.localRotation;
     }
 
     private void LateUpdate()
@@ -90,18 +87,6 @@ public class NPCLookAtTarget : MonoBehaviour
         }
 
         lookCoroutine = StartCoroutine(LookAtForSeconds());
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.transform == target)
-        {
-            if (lookCoroutine != null)
-            {
-                StopCoroutine(lookCoroutine);
-            }
-            isLooking = false;
-            target = null;
-        }
     }
 
     private IEnumerator LookAtForSeconds()
