@@ -29,9 +29,7 @@ public class NPCAnimatorController : MonoBehaviour
         // adjust animation speed to actual NPC speed
         float currentSpeed = agent.velocity.magnitude;
 
-        // Normalize 
         float normalizedSpeed = Mathf.Clamp01(currentSpeed / maxMoveSpeed);
-        Debug.Log($"Normalized Speed: {normalizedSpeed}");
 
         // Smoothly blend to target value
         animator.SetFloat(speedParameter, normalizedSpeed, dampTime, Time.deltaTime);
