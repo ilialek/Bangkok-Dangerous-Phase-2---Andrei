@@ -15,7 +15,7 @@ public class RoamZoneManager : MonoBehaviour
         }
         Instance = this;
         
-        roamZones.AddRange(FindObjectsOfType<RoamZone>());
+        roamZones.AddRange(FindObjectsByType<RoamZone>(FindObjectsSortMode.None));
     }
 
     public List<RoamZone> GetAllZones()
