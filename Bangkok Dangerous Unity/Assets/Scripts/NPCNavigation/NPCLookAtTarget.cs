@@ -1,74 +1,47 @@
 using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class NPCLookAtTarget : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    [SerializeField] private Transform head;
-    [SerializeField] private float lookDuration = 3f;
-    [SerializeField] private float returnSpeed = 5f;
+    [SerializeField] private float lookDuration = 1.5f;
+    [SerializeField] private float lookBlendSpeed = 3f;
     [SerializeField] private float maxLookAngle = 80f;
     [SerializeField] private Vector3 lookOffset = new Vector3(0f, 1.5f, 0f);
 
-    private Quaternion defaultLocalRotation;
+    [Header("Look Weights")]
+    [SerializeField][Range(0f, 1f)] private float overallWeight = 1f;
+    [SerializeField][Range(0f, 1f)] private float bodyWeight = 0.15f;
+    [SerializeField][Range(0f, 1f)] private float headWeight = 1f;
+    [SerializeField][Range(0f, 1f)] private float eyesWeight = 0f;
+    [SerializeField][Range(0f, 1f)] private float clampWeight = 0.6f;
+
+    private Animator animator;
     private Coroutine lookCoroutine;
     private bool isLooking;
+    private float currentLookWeight;
+    private Vector3 lastLookPoint;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
-        defaultLocalRotation = head.localRotation;
+        lastLookPoint = transform.position + transform.forward * 10f;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        if (isLooking && target != null)
-        {
-            Vector3 targetPosition = target.position + lookOffset;
+        float targetWeight = isLooking ? overallWeight : 0f;
 
-            // Ignore vertical difference so the head only turns left/right
-            targetPosition.y = head.position.y;
-
-            Vector3 directionToTarget = targetPosition - head.position;
-
-            if (directionToTarget.sqrMagnitude > 0.001f)
-            {
-                Vector3 bodyForward = transform.forward;
-                bodyForward.y = 0f;
-                bodyForward.Normalize();
-
-                Vector3 flatDirection = directionToTarget;
-                flatDirection.y = 0f;
-                flatDirection.Normalize();
-
-                float angle = Vector3.Angle(bodyForward, flatDirection);
-
-                Vector3 finalDirection;
-
-                if (angle <= maxLookAngle)
-                {
-                    finalDirection = flatDirection;
-                }
-                else
-                {
-                    finalDirection = Vector3.RotateTowards(
-                        bodyForward,
-                        flatDirection,
-                        Mathf.Deg2Rad * maxLookAngle,
-                        0f
-                    );
-                }
-
-                head.rotation = Quaternion.LookRotation(finalDirection, Vector3.up);
-            }
-        }
-        else
-        {
-            head.localRotation = Quaternion.Slerp(
-                head.localRotation,
-                defaultLocalRotation,
-                returnSpeed * Time.deltaTime
-            );
-        }
+        currentLookWeight = Mathf.MoveTowards(
+            currentLookWeight,
+            targetWeight,
+            lookBlendSpeed * Time.deltaTime
+        );
     }
 
     private void OnTriggerEnter(Collider other)
@@ -82,9 +55,7 @@ public class NPCLookAtTarget : MonoBehaviour
         target = other.transform;
 
         if (lookCoroutine != null)
-        {
             StopCoroutine(lookCoroutine);
-        }
 
         lookCoroutine = StartCoroutine(LookAtForSeconds());
     }
@@ -95,5 +66,66 @@ public class NPCLookAtTarget : MonoBehaviour
         yield return new WaitForSeconds(lookDuration);
         isLooking = false;
         target = null;
+    }
+
+    private void OnAnimatorIK(int layerIndex)
+    {
+
+        if (currentLookWeight <= 0.001f)
+        {
+            animator.SetLookAtWeight(0f);
+            return;
+        }
+
+        Transform headBone = animator.GetBoneTransform(HumanBodyBones.Head);
+        if (headBone == null)
+        {
+            animator.SetLookAtWeight(0f);
+            return;
+        }
+
+        if (target != null)
+        {
+            Vector3 targetPosition = target.position + lookOffset;
+
+            // Keep the look horizontal
+            targetPosition.y = headBone.position.y;
+
+            Vector3 bodyForward = transform.forward;
+            bodyForward.y = 0f;
+            bodyForward.Normalize();
+
+            Vector3 directionToTarget = targetPosition - transform.position;
+            directionToTarget.y = 0f;
+
+            if (directionToTarget.sqrMagnitude > 0.001f)
+            {
+                directionToTarget.Normalize();
+
+                float angle = Vector3.Angle(bodyForward, directionToTarget);
+
+                Vector3 finalDirection = angle <= maxLookAngle
+                    ? directionToTarget
+                    : Vector3.RotateTowards(
+                        bodyForward,
+                        directionToTarget,
+                        Mathf.Deg2Rad * maxLookAngle,
+                        0f
+                    );
+
+                lastLookPoint = headBone.position + finalDirection * 10f;
+                lastLookPoint.y = headBone.position.y;
+            }
+        }
+
+        animator.SetLookAtWeight(
+            currentLookWeight,
+            bodyWeight,
+            headWeight,
+            eyesWeight,
+            clampWeight
+        );
+
+        animator.SetLookAtPosition(lastLookPoint);
     }
 }
