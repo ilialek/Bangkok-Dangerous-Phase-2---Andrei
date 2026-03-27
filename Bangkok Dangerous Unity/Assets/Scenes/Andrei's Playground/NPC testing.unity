@@ -469,6 +469,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -548,13 +552,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (15)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -1514,6 +1522,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -1593,13 +1605,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (16)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -2102,6 +2118,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -2181,13 +2201,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (17)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -2206,6 +2230,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -2286,13 +2314,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (9)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -3025,6 +3057,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -3104,13 +3140,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (11)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -3315,6 +3355,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -3394,13 +3438,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -3712,6 +3760,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -3791,13 +3843,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (18)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -3816,6 +3872,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -3896,13 +3956,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -3921,6 +3985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -4001,13 +4069,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -4747,6 +4819,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -4826,13 +4902,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (12)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -5209,6 +5289,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -5288,13 +5372,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (8)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -5313,6 +5401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -5393,13 +5485,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -5531,6 +5627,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -5610,13 +5710,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (10)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -6723,6 +6827,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -6802,13 +6910,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -6827,6 +6939,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -6907,13 +7023,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -6932,6 +7052,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -7012,13 +7136,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (13)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -7150,6 +7278,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -7229,13 +7361,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (7)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -7254,6 +7390,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
@@ -7334,13 +7474,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name
       value: BaseNPC (14)
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_TagString
@@ -7489,6 +7633,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 147123479446575806, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: 'destinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1167734092}
@@ -7531,6 +7679,10 @@ PrefabInstance:
     - target: {fileID: 846927287841163297, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542242308774921181, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       propertyPath: m_Name

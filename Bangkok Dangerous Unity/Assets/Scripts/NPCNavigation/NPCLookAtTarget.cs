@@ -11,6 +11,8 @@ public class NPCLookAtTarget : MonoBehaviour
     [SerializeField] private float lookBlendSpeed = 3f;
     [SerializeField] private float maxLookAngle = 80f;
     [SerializeField] private Vector3 lookOffset = new Vector3(0f, 1.5f, 0f);
+    [SerializeField] private string playerTag = "Player";
+    [SerializeField] private string npcTag = "NPC";
 
     [Header("Look Weights")]
     [SerializeField][Range(0f, 1f)] private float overallWeight = 1f;
@@ -48,7 +50,7 @@ public class NPCLookAtTarget : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player") && !other.CompareTag("NPC"))
+        if (!other.CompareTag(playerTag) && !other.CompareTag(npcTag))
             return;
         if (other.transform.root == transform.root)
             return;
