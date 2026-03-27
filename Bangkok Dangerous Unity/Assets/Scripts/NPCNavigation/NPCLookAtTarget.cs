@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Animator))]
 public class NPCLookAtTarget : MonoBehaviour
 {
+    [Header("Look Settings")]    
     [SerializeField] private Transform target;
     [SerializeField] private float lookChance = 0.5f;
     [SerializeField] private float lookDuration = 1.5f;
