@@ -220,7 +220,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1439916535341148034, guid: 748f579214672b84e9f10773ae78b4db, type: 3}
+  - {fileID: 2100000, guid: 3ac35800ca9aa6a4da2602ca0c4c3461, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2256,6 +2256,8 @@ MonoBehaviour:
   lookBlendSpeed: 3
   maxLookAngle: 60
   lookOffset: {x: 0, y: 1.5, z: 0}
+  playerTag: Player
+  npcTag: NPC
   overallWeight: 1
   bodyWeight: 0.15
   headWeight: 1
