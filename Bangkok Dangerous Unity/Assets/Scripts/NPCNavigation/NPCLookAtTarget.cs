@@ -5,6 +5,7 @@ using System.Collections;
 public class NPCLookAtTarget : MonoBehaviour
 {
     [SerializeField] private Transform target;
+    [SerializeField] private float lookChance = 0.5f;
     [SerializeField] private float lookDuration = 1.5f;
     [SerializeField] private float lookBlendSpeed = 3f;
     [SerializeField] private float maxLookAngle = 80f;
@@ -48,11 +49,12 @@ public class NPCLookAtTarget : MonoBehaviour
     {
         if (!other.CompareTag("Player") && !other.CompareTag("NPC"))
             return;
-
         if (other.transform.root == transform.root)
             return;
+        if (Random.value > lookChance)
+            return;
 
-        target = other.transform;
+       target = other.transform;
 
         if (lookCoroutine != null)
             StopCoroutine(lookCoroutine);
