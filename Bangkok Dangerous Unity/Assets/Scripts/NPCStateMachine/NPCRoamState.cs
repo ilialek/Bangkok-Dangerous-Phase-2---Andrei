@@ -20,9 +20,6 @@ public class NPCRoamState : NPCState
 
     public override void Tick()
     {
-        if (stateMachine.Agent == null)
-            return;
-
         if (stateMachine.HasReachedDestination())
         {
             stateMachine.ChangeState(stateMachine.IdleState);

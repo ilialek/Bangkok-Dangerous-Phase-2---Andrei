@@ -27,8 +27,6 @@ public class NPCIdleState : NPCState
 
     public override void Tick()
     {
-        if (stateMachine.IdleConfig == null) return;
-
         idleTimer -= Time.deltaTime;
 
         if (idleTimer <= 0f)

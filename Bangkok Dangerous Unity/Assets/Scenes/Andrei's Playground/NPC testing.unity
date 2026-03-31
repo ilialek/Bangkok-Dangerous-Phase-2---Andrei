@@ -5097,8 +5097,8 @@ Transform:
   m_GameObject: {fileID: 1379634053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -51, y: 0, z: 11}
-  m_LocalScale: {x: 63.470398, y: 8, z: 6}
+  m_LocalPosition: {x: -51.5603, y: 0, z: 11}
+  m_LocalScale: {x: 63.470398, y: 8, z: 7.1208}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 68805789}
@@ -5866,7 +5866,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
   idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
-  roamConfig: {fileID: 11400000, guid: 903e672ff92a8ac4f94b9949ecd1ee7f, type: 2}
+  roamConfig: {fileID: 11400000, guid: fa117e6f858cbca498111e2e39245590, type: 2}
 --- !u!1001 &1546173330
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,4 +7,5 @@ public class NPCRoamStateConfig : ScriptableObject
     public float roamRadius = 10f;
     public int maxSampleAttempts = 10;
     public float navMeshSampleDistance = 5f;
+    public float MinEdgeDistance = 0.75f;
 }

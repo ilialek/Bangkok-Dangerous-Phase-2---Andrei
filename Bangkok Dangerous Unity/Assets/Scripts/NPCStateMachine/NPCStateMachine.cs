@@ -46,8 +46,6 @@ public class NPCStateMachine : MonoBehaviour
 
     public void ChangeState(NPCState newState)
     {
-        if (newState == null) return;
-
         currentState?.Exit();
         currentState = newState;
         currentState.Enter();
@@ -62,29 +60,23 @@ public class NPCStateMachine : MonoBehaviour
     {
         point = Vector3.zero;
 
-        if (roamConfig == null)
-        {
-            Debug.LogWarning($"{name}: Missing Roam State Config.");
-            return false;
-        }
-
         Vector3 origin = GetRoamOrigin();
 
         for (int i = 0; i < roamConfig.maxSampleAttempts; i++)
         {
-            Vector3 randomDirection = Random.insideUnitSphere * roamConfig.roamRadius;
-            randomDirection.y = 0f;
+            Vector2 random2D = Random.insideUnitCircle * roamConfig.roamRadius;
+            Vector3 candidate = origin + new Vector3(random2D.x, 0f, random2D.y);
 
-            Vector3 targetPosition = origin + randomDirection;
-
-            if (NavMesh.SamplePosition(
-                targetPosition,
-                out NavMeshHit hit,
-                roamConfig.navMeshSampleDistance,
-                NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(candidate, out NavMeshHit hit, roamConfig.navMeshSampleDistance, NavMesh.AllAreas))
             {
-                point = hit.position;
-                return true;
+                if (NavMesh.FindClosestEdge(hit.position, out NavMeshHit edgeHit, NavMesh.AllAreas))
+                {
+                    if (edgeHit.distance >= roamConfig.MinEdgeDistance)
+                    {
+                        point = hit.position;
+                        return true;
+                    }
+                }
             }
         }
 
@@ -93,7 +85,6 @@ public class NPCStateMachine : MonoBehaviour
 
     public bool HasReachedDestination()
     {
-        if (agent == null) return false;
         if (agent.pathPending) return false;
         if (agent.remainingDistance > agent.stoppingDistance) return false;
         if (agent.hasPath && agent.velocity.sqrMagnitude > 0.01f) return false;
