@@ -8,22 +8,32 @@ public class NPCIdleState : NPCState
 
     public override void Enter()
     {
-        idleTimer = stateMachine.GetRandomIdleDuration();
-        stateMachine.agent.isStopped = true;
-        stateMachine.agent.ResetPath();
+        NPCIdleStateConfig config = stateMachine.IdleConfig;
+
+        if (config == null)
+        {
+            Debug.LogWarning($"{stateMachine.name}: Missing Idle State Config.");
+            return;
+        }
+
+        idleTimer = Random.Range(config.minIdleTime, config.maxIdleTime);
+
+        if (stateMachine.Agent != null)
+        {
+            stateMachine.Agent.isStopped = true;
+            stateMachine.Agent.ResetPath();
+        }
     }
 
     public override void Tick()
     {
+        if (stateMachine.IdleConfig == null) return;
+
         idleTimer -= Time.deltaTime;
 
         if (idleTimer <= 0f)
         {
             stateMachine.ChangeState(stateMachine.RoamState);
         }
-    }
-
-    public override void Exit()
-    {
     }
 }

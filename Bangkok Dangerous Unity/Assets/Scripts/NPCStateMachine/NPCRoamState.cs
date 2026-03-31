@@ -6,11 +6,11 @@ public class NPCRoamState : NPCState
 
     public override void Enter()
     {
-        stateMachine.agent.isStopped = false;
+        stateMachine.Agent.isStopped = false;
 
         if (stateMachine.TryGetRandomRoamPoint(out Vector3 destination))
         {
-            stateMachine.agent.SetDestination(destination);
+            stateMachine.Agent.SetDestination(destination);
         }
         else
         {
@@ -20,13 +20,12 @@ public class NPCRoamState : NPCState
 
     public override void Tick()
     {
+        if (stateMachine.Agent == null)
+            return;
+
         if (stateMachine.HasReachedDestination())
         {
             stateMachine.ChangeState(stateMachine.IdleState);
         }
-    }
-
-    public override void Exit()
-    {
     }
 }

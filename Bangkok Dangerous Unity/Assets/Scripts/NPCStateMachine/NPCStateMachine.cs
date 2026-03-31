@@ -1,26 +1,28 @@
-using System.Xml;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class NPCStateMachine : MonoBehaviour
 {
     [Header("References")]
-    public NavMeshAgent agent;
-    public Animator animator;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Animator animator;
+    [SerializeField] private Transform roamCenter;
 
-    [Header("Roaming")]
-    public float roamRadius = 10f;
-    public float minIdleTime = 2f;
-    public float maxIdleTime = 5f;
-
-    [Header("Optional")]
-    public Transform roamCenter;
+    [Header("State Configs")]
+    [SerializeField] private NPCIdleStateConfig idleConfig;
+    [SerializeField] private NPCRoamStateConfig roamConfig;
 
     private NPCState currentState;
 
     public NPCIdleState IdleState { get; private set; }
     public NPCRoamState RoamState { get; private set; }
+
+    public NavMeshAgent Agent => agent;
+    public Animator Animator => animator;
+    public Transform RoamCenter => roamCenter;
+
+    public NPCIdleStateConfig IdleConfig => idleConfig;
+    public NPCRoamStateConfig RoamConfig => roamConfig;
 
     private void Awake()
     {
@@ -58,33 +60,40 @@ public class NPCStateMachine : MonoBehaviour
 
     public bool TryGetRandomRoamPoint(out Vector3 point)
     {
+        point = Vector3.zero;
+
+        if (roamConfig == null)
+        {
+            Debug.LogWarning($"{name}: Missing Roam State Config.");
+            return false;
+        }
+
         Vector3 origin = GetRoamOrigin();
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < roamConfig.maxSampleAttempts; i++)
         {
-            Vector3 randomDirection = Random.insideUnitSphere * roamRadius;
+            Vector3 randomDirection = Random.insideUnitSphere * roamConfig.roamRadius;
             randomDirection.y = 0f;
 
             Vector3 targetPosition = origin + randomDirection;
 
-            if (NavMesh.SamplePosition(targetPosition, out NavMeshHit hit, 5f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(
+                targetPosition,
+                out NavMeshHit hit,
+                roamConfig.navMeshSampleDistance,
+                NavMesh.AllAreas))
             {
                 point = hit.position;
                 return true;
             }
         }
 
-        point = Vector3.zero;
         return false;
-    }
-
-    public float GetRandomIdleDuration()
-    {
-        return Random.Range(minIdleTime, maxIdleTime);
     }
 
     public bool HasReachedDestination()
     {
+        if (agent == null) return false;
         if (agent.pathPending) return false;
         if (agent.remainingDistance > agent.stoppingDistance) return false;
         if (agent.hasPath && agent.velocity.sqrMagnitude > 0.01f) return false;
@@ -94,8 +103,6 @@ public class NPCStateMachine : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        if (animator == null || agent == null) return;
-
         float speed = agent.velocity.magnitude;
         animator.SetFloat("Speed", speed);
     }
