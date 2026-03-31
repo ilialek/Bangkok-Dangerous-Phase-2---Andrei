@@ -11,11 +11,15 @@ public class NPCStateMachine : MonoBehaviour
     [Header("State Configs")]
     [SerializeField] private NPCIdleStateConfig idleConfig;
     [SerializeField] private NPCRoamStateConfig roamConfig;
+    [SerializeField] private NPCSmokingStateConfig smokingConfig;
+    [SerializeField] private NPCTalkingStateConfig talkingConfig;
 
     private NPCState currentState;
 
     public NPCIdleState IdleState { get; private set; }
     public NPCRoamState RoamState { get; private set; }
+    public NPCSmokingState SmokingState { get; private set; }
+    public NPCTalkingState TalkingState { get; private set; }
 
     public NavMeshAgent Agent => agent;
     public Animator Animator => animator;
@@ -23,6 +27,8 @@ public class NPCStateMachine : MonoBehaviour
 
     public NPCIdleStateConfig IdleConfig => idleConfig;
     public NPCRoamStateConfig RoamConfig => roamConfig;
+    public NPCSmokingStateConfig SmokingConfig => smokingConfig;
+    public NPCTalkingStateConfig TalkingConfig => TalkingConfig;
 
     private void Awake()
     {
@@ -31,6 +37,8 @@ public class NPCStateMachine : MonoBehaviour
 
         IdleState = new NPCIdleState(this);
         RoamState = new NPCRoamState(this);
+        SmokingState = new NPCSmokingState(this);
+        TalkingState = new NPCTalkingState(this);
     }
 
     private void Start()

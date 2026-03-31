@@ -15,4 +15,4 @@ MonoBehaviour:
   roamRadius: 10
   maxSampleAttempts: 10
   navMeshSampleDistance: 2
-  MinEdgeDistance: 0.75
+  MinEdgeDistance: 2

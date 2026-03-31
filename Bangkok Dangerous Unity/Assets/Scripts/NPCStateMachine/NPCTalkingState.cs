@@ -1,25 +1,25 @@
 using UnityEngine;
 
-public class NPCIdleState : NPCStationaryState
+public class NPCTalkingState : NPCStationaryState
 {
-    public NPCIdleState(NPCStateMachine stateMachine) : base(stateMachine) { }
+    public NPCTalkingState(NPCStateMachine stateMachine)     : base(stateMachine) { }
 
     public override void Enter()
     {
         base.Enter();
 
         stateTimer = Random.Range(
-            stateMachine.IdleConfig.minIdleTime, 
-            stateMachine.IdleConfig.maxIdleTime
+            stateMachine.TalkingConfig.minTalkingTime, 
+            stateMachine.TalkingConfig.maxTalkingTime
             );
 
-        stateMachine.Animator.SetTrigger("Idle");   
+        stateMachine.Animator.SetTrigger("Talk");
     }
 
     public override void Tick()
     {
         TickTimer();
-
+        
         if (IsTimerFinished())
         {
             stateMachine.ChangeState(stateMachine.RoamState);

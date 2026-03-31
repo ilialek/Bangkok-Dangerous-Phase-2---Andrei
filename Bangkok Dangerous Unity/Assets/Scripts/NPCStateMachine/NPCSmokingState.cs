@@ -1,19 +1,17 @@
 using UnityEngine;
 
-public class NPCIdleState : NPCStationaryState
+public class NPCSmokingState : NPCStationaryState
 {
-    public NPCIdleState(NPCStateMachine stateMachine) : base(stateMachine) { }
-
+    public NPCSmokingState(NPCStateMachine stateMachine) : base(stateMachine) { }
+  
     public override void Enter()
     {
         base.Enter();
-
         stateTimer = Random.Range(
-            stateMachine.IdleConfig.minIdleTime, 
-            stateMachine.IdleConfig.maxIdleTime
+            stateMachine.SmokingConfig.minSmokingTime, 
+            stateMachine.SmokingConfig.maxSmokingTime
             );
-
-        stateMachine.Animator.SetTrigger("Idle");   
+        stateMachine.Animator.SetTrigger("Smoke");
     }
 
     public override void Tick()
