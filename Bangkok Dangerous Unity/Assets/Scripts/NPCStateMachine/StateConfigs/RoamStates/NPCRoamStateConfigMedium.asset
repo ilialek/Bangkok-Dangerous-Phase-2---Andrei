@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCRoamStateConfig
   roamRadius: 25
   maxSampleAttempts: 10
-  navMeshSampleDistance: 5
+  navMeshSampleDistance: 20

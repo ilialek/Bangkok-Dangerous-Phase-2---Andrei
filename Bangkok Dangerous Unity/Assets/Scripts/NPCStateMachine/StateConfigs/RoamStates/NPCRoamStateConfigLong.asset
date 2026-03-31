@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539f38ed6c7c21f408b4b74bca2e5cf2, type: 3}
   m_Name: NPCRoamStateConfigLong
   m_EditorClassIdentifier: Assembly-CSharp::NPCRoamStateConfig
-  roamRadius: 50
+  roamRadius: 100
   maxSampleAttempts: 10
-  navMeshSampleDistance: 5
+  navMeshSampleDistance: 90
