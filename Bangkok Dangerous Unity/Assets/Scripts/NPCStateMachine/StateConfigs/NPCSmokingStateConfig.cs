@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCSmokingStateConfig", menuName = "NPC State Machine/Configs/NPC Smoking State Config")]
+[CreateAssetMenu(fileName = "NPCSmokingStateConfig", menuName = "NPC State Machine/States/Smoking State Config")]
 public class NPCSmokingStateConfig : ScriptableObject
 {
     [Header("Smoking Settings")]

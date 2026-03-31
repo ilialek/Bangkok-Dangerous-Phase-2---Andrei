@@ -1,10 +1,9 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCTalkingStateConfig", menuName = "NPC State Machine/NPCTalkingStateConfig")]
+[CreateAssetMenu(fileName = "NPCTalkingStateConfig", menuName = "NPC State Machine/States/Talking State Config")]
 public class NPCTalkingStateConfig : ScriptableObject
 {
     [Header("Talking Settings")]
-    public float minSmokingTime = 4f;
-    public float maxSmokingTime = 10f;
+    public float minTalkingTime = 4f;
+    public float maxTalkingTime = 10f;
 }

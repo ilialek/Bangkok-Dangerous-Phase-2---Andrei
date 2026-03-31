@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCRoamStateConfig", menuName = "NPC/States/Roam State Config")]
+[CreateAssetMenu(fileName = "NPCRoamStateConfig", menuName = "NPC State Machine/States/Roam State Config")]
 public class NPCRoamStateConfig : ScriptableObject
 {
     [Header("Roam Settings")]
