@@ -15,7 +15,7 @@ public class NPCStateMachine : MonoBehaviour
     [SerializeField] private NPCTalkingStateConfig talkingConfig;
 
     private NPCState currentState;
-    private int destinationsVisited = 0;
+    private int destinationsVisitedSinceLastStationary = 0;
 
     public NPCIdleState IdleState { get; private set; }
     public NPCRoamState RoamState { get; private set; }
@@ -44,7 +44,7 @@ public class NPCStateMachine : MonoBehaviour
 
     private void Start()
     {
-        ChangeState(IdleState);
+        ChangeState(RoamState);
     }
 
     private void Update()
@@ -111,7 +111,7 @@ public class NPCStateMachine : MonoBehaviour
 
     public void HandleRoamDestinationReached()
     {
-        destinationsVisited++;
+        destinationsVisitedSinceLastStationary++;
 
         if (!CanEnterStationaryState())
         {
@@ -134,19 +134,19 @@ public class NPCStateMachine : MonoBehaviour
 
     public void NotifyStationaryStateFinished()
     {
-        destinationsVisited = 0;
+        destinationsVisitedSinceLastStationary = 0;
         ChangeState(RoamState);
     }
 
     private bool CanEnterStationaryState()
     {
-        return destinationsVisited >= roamConfig.minDestinationsBeforeStationary;
+        return destinationsVisitedSinceLastStationary >= roamConfig.minDestinationsBeforeStationary;
     }
 
     private float GetCurrentStationaryChance()
     {
         int extraDestinations =
-            destinationsVisited - roamConfig.minDestinationsBeforeStationary;
+            destinationsVisitedSinceLastStationary - roamConfig.minDestinationsBeforeStationary;
 
         float chance =
             roamConfig.baseStationaryChance +
