@@ -15,6 +15,7 @@ public class NPCStateMachine : MonoBehaviour
     [SerializeField] private NPCTalkingStateConfig talkingConfig;
 
     private NPCState currentState;
+    private int destinationsVisited = 0;
 
     public NPCIdleState IdleState { get; private set; }
     public NPCRoamState RoamState { get; private set; }
@@ -28,7 +29,7 @@ public class NPCStateMachine : MonoBehaviour
     public NPCIdleStateConfig IdleConfig => idleConfig;
     public NPCRoamStateConfig RoamConfig => roamConfig;
     public NPCSmokingStateConfig SmokingConfig => smokingConfig;
-    public NPCTalkingStateConfig TalkingConfig => TalkingConfig;
+    public NPCTalkingStateConfig TalkingConfig => talkingConfig;
 
     private void Awake()
     {
@@ -93,16 +94,87 @@ public class NPCStateMachine : MonoBehaviour
 
     public bool HasReachedDestination()
     {
-        if (agent.pathPending) return false;
-        if (agent.remainingDistance > agent.stoppingDistance) return false;
-        if (agent.hasPath && agent.velocity.sqrMagnitude > 0.01f) return false;
+        if (agent == null)
+            return false;
+
+        if (agent.pathPending)
+            return false;
+
+        if (agent.remainingDistance > agent.stoppingDistance)
+            return false;
+
+        if (agent.hasPath && agent.velocity.sqrMagnitude > 0.01f)
+            return false;
 
         return true;
     }
 
+    public void HandleRoamDestinationReached()
+    {
+        destinationsVisited++;
+
+        if (!CanEnterStationaryState())
+        {
+            ChangeState(RoamState);
+            return;
+        }
+
+        float chance = GetCurrentStationaryChance();
+        float roll = Random.value;
+
+        if (roll <= chance)
+        {
+            ChangeState(GetRandomSoloStationaryState());
+        }
+        else
+        {
+            ChangeState(RoamState);
+        }
+    }
+
+    public void NotifyStationaryStateFinished()
+    {
+        destinationsVisited = 0;
+        ChangeState(RoamState);
+    }
+
+    private bool CanEnterStationaryState()
+    {
+        return destinationsVisited >= roamConfig.minDestinationsBeforeStationary;
+    }
+
+    private float GetCurrentStationaryChance()
+    {
+        int extraDestinations =
+            destinationsVisited - roamConfig.minDestinationsBeforeStationary;
+
+        float chance =
+            roamConfig.baseStationaryChance +
+            (extraDestinations * roamConfig.stationaryChanceMultiplier);
+
+        return Mathf.Clamp01(chance);
+    }
+
+    private NPCState GetRandomSoloStationaryState()
+    {
+        float totalWeight = roamConfig.idleWeight + roamConfig.smokingWeight;
+
+        if (totalWeight <= 0f)
+            return IdleState;
+
+        float roll = Random.value * totalWeight;
+
+        if (roll < roamConfig.idleWeight)
+            return IdleState;
+
+        return SmokingState;
+    }
+
     private void UpdateAnimator()
     {
-        float speed = agent.velocity.magnitude;
-        animator.SetFloat("Speed", speed);
+        if (agent == null || animator == null)
+            return;
+
+        animator.SetFloat("Speed", agent.velocity.magnitude);
     }
 }

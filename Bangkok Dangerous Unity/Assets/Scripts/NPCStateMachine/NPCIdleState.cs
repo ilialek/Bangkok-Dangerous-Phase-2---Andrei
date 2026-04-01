@@ -13,6 +13,8 @@ public class NPCIdleState : NPCStationaryState
             stateMachine.IdleConfig.maxIdleTime
             );
 
+        int idleVariant = stateMachine.IdleConfig.GetRandomIdleVariant();
+        stateMachine.Animator.SetInteger("IdleVariant", idleVariant);   
         stateMachine.Animator.SetTrigger("Idle");   
     }
 
