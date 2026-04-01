@@ -24,7 +24,7 @@ public class NPCIdleState : NPCStationaryState
 
         if (IsTimerFinished())
         {
-            stateMachine.ChangeState(stateMachine.RoamState);
+            stateMachine.NotifyStationaryStateFinished();
         }
     }
 }

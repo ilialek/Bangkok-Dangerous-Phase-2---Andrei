@@ -22,7 +22,7 @@ public class NPCRoamState : NPCState
     {
         if (stateMachine.HasReachedDestination())
         {
-            stateMachine.ChangeState(stateMachine.IdleState);
+            stateMachine.HandleRoamDestinationReached();
         }
     }
 }
