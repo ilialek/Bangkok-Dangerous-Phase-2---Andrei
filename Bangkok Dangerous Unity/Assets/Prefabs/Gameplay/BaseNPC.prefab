@@ -220,7 +220,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1439916535341148034, guid: 748f579214672b84e9f10773ae78b4db, type: 3}
+  - {fileID: 2100000, guid: 3ac35800ca9aa6a4da2602ca0c4c3461, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2035,9 +2035,11 @@ GameObject:
   - component: {fileID: 8673752592046346212}
   - component: {fileID: 6174748840503840282}
   - component: {fileID: 3542242308774921181}
+  - component: {fileID: 3030999375419912621}
+  - component: {fileID: 6975204085827412679}
   m_Layer: 6
   m_Name: BaseNPC
-  m_TagString: Enemy
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2169,22 +2171,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930752882633895449}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd3475870794a8429faed69e6e44cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
   destinations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   randomOrder: 1
   waitTimeAtPoint: 5
@@ -2235,7 +2228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6930752882633895449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9929494d91b9e5b4eb79eec472caca92, type: 3}
   m_Name: 
@@ -2245,6 +2238,52 @@ MonoBehaviour:
   arriveThreshold: 0.25
   navMeshSampleRadius: 5
   maxPointsAttempts: 20
+--- !u!114 &3030999375419912621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930752882633895449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def269efba2a2e44db5c7af5008b4550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCLookAtTarget
+  target: {fileID: 0}
+  lookChance: 0.7
+  lookDuration: 1.5
+  lookBlendSpeed: 3
+  maxLookAngle: 60
+  lookOffset: {x: 0, y: 1.5, z: 0}
+  playerTag: Player
+  npcTag: NPC
+  overallWeight: 1
+  bodyWeight: 0.15
+  headWeight: 1
+  eyesWeight: 0
+  clampWeight: 0.6
+--- !u!135 &6975204085827412679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930752882633895449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6954868644685581536
 GameObject:
   m_ObjectHideFlags: 0
