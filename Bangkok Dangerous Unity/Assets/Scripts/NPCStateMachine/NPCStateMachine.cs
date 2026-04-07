@@ -44,6 +44,7 @@ public class NPCStateMachine : MonoBehaviour
 
     private void Start()
     {
+        animator.applyRootMotion = false;
         ChangeState(RoamState);
     }
 

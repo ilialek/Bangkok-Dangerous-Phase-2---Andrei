@@ -6,6 +6,7 @@ public class NPCRoamState : NPCState
 
     public override void Enter()
     {
+        stateMachine.Animator.applyRootMotion = false;
         stateMachine.Agent.isStopped = false;
 
         if (stateMachine.TryGetRandomRoamPoint(out Vector3 destination))

@@ -8,8 +8,10 @@ public class NPCStationaryState : NPCState
 
     public override void Enter()
     {
+        Debug.LogWarning($"NPC: {stateMachine.gameObject.name} entered stationary state: {GetType().Name}");
         stateMachine.Agent.isStopped = true;
         stateMachine.Agent.ResetPath();
+        stateMachine.Animator.applyRootMotion = true;
     }
 
     protected void TickTimer()
@@ -20,5 +22,12 @@ public class NPCStationaryState : NPCState
     protected bool IsTimerFinished()
     {
         return stateTimer <= 0f;
-    }   
+    }
+
+    public override void Exit()
+    {
+        Debug.LogWarning($"NPC: {stateMachine.gameObject.name} left stationary state: {GetType().Name}");
+
+        stateMachine.Animator.applyRootMotion = false;
+    }
 }
