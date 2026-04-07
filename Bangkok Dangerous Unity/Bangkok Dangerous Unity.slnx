@@ -1,0 +1,16 @@
+﻿<Solution>
+  <Project Path="GenericMeshGeneration.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="FlowGraphEditor.csproj" />
+  <Project Path="Procedural.csproj" />
+  <Project Path="FlowGraph.csproj" />
+  <Project Path="ProceduralEditor.csproj" />
+  <Project Path="Dialogue.csproj" />
+  <Project Path="GameArchitecture.csproj" />
+  <Project Path="MeshGeneration.csproj" />
+  <Project Path="WirePoleSystem.csproj" />
+  <Project Path="Utilities.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Quest.csproj" />
+  <Project Path="WirePoleSystem.Editor.csproj" />
+</Solution>
