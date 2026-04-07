@@ -484,10 +484,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &70495390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70495366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &78276814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,6 +615,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -607,6 +632,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 969843960}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 969843972}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &83130108 stripped
 GameObject:
@@ -628,10 +656,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &83130132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83130108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &83811836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +787,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -751,6 +804,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 83130120}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 83130132}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &88553444
 GameObject:
@@ -1090,6 +1146,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1097,6 +1163,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 206116852}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 206116864}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &148657188 stripped
 GameObject:
@@ -1118,10 +1187,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &148657212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148657188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &158607902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1234,6 +1318,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1241,6 +1335,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 785770259}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 785770271}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &184178536
 GameObject:
@@ -1640,10 +1737,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &200466128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200466104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &203429621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,10 +1844,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &206116864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206116851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &230141896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -1756,10 +1883,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &230141909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230141896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &237013723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,6 +2398,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2263,6 +2415,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 816114997}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 816115009}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &268635838
 GameObject:
@@ -2489,6 +2644,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2496,6 +2661,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 987602345}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 987602357}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &436345593
 GameObject:
@@ -2981,6 +3149,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2988,6 +3166,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 943732733}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 943732745}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &475026195
 PrefabInstance:
@@ -3101,6 +3282,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3108,6 +3299,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1619702674}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1619702686}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &517210654
 GameObject:
@@ -3938,6 +4132,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3945,6 +4149,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 915870875}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 915870887}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &594429723
 GameObject:
@@ -4244,6 +4451,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4251,6 +4468,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1175895862}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1175895874}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &785770258 stripped
 GameObject:
@@ -4272,10 +4492,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &785770271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785770258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &809895237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,10 +4757,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &816115009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816114985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &838752388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4638,6 +4888,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4645,6 +4905,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 982285677}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 982285689}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &875688012
 GameObject:
@@ -4734,10 +4997,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &915870887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915870863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &943732721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -4758,10 +5036,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &943732745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943732721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &945328969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4874,6 +5167,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4881,6 +5184,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1346762664}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1346762676}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &954672820
 PrefabInstance:
@@ -4994,6 +5300,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5001,6 +5317,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 148657200}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 148657212}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &958754006
 PrefabInstance:
@@ -5114,6 +5433,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5121,6 +5450,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 70495378}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 70495390}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &969843959 stripped
 GameObject:
@@ -5142,10 +5474,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &969843972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969843959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &982285676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -5166,10 +5513,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &982285689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982285676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &987602344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -5190,10 +5552,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &987602357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987602344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1055247892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,10 +5848,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1138726980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138726956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1156984173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5696,10 +6088,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1175895874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175895850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1196632743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,10 +6240,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1266509453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266509429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1271169485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -5857,10 +6279,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1271169509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271169485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1328730295
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,10 +6472,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1342641984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342641960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1346605320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6151,6 +6603,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6158,6 +6620,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1634977708}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1634977720}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1346762652 stripped
 GameObject:
@@ -6179,10 +6644,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1346762676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346762652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1347592882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6295,6 +6775,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6302,6 +6792,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1271169497}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1271169509}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1353934990
 GameObject:
@@ -6467,10 +6960,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1412196195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412196171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1441315196
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,6 +7204,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6703,6 +7221,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1578055428}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578055440}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1455431839
 GameObject:
@@ -7031,6 +7552,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7038,6 +7569,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 200466116}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 200466128}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &1518405190
 PrefabInstance:
@@ -7151,6 +7685,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7158,6 +7702,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1138726968}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1138726980}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1522005717
 GameObject:
@@ -7292,10 +7839,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1523129135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523129101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1546173330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7408,6 +7970,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7415,6 +7987,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1342641972}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1342641984}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1553470303
 GameObject:
@@ -7549,10 +8124,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1576826742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576826718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1577438170
 GameObject:
   m_ObjectHideFlags: 0
@@ -7641,10 +8231,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1578055440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578055427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 1.7, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1584012120
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,10 +8640,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1619702686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619702662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1634977707 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
@@ -8059,10 +8679,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1634977720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634977707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1675032752
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,6 +9353,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8725,6 +9370,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1266509441}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266509453}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &1884630874
 PrefabInstance:
@@ -8838,6 +9486,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8845,6 +9503,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1968183854}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1968183866}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &1885002645
 PrefabInstance:
@@ -8958,6 +9619,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8965,6 +9636,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2131575117}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2131575129}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1968183842 stripped
 GameObject:
@@ -8986,10 +9660,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &1968183866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968183842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1973859279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9102,6 +9791,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9109,6 +9808,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2052718210}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052718222}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1 &1978813474
 GameObject:
@@ -9335,6 +10037,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9342,6 +10054,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1576826730}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1576826742}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &2025903345
 PrefabInstance:
@@ -9455,6 +10170,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9462,6 +10187,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412196183}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1412196195}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &2036797518
 PrefabInstance:
@@ -9575,6 +10303,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8673752592046346212, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9582,6 +10320,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 230141897}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 230141909}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1001 &2047988855
 PrefabInstance:
@@ -9777,10 +10518,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &2052718222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052718198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2058628666
 GameObject:
   m_ObjectHideFlags: 0
@@ -9869,10 +10625,25 @@ MonoBehaviour:
   agent: {fileID: 0}
   animator: {fileID: 0}
   roamCenter: {fileID: 0}
-  idleConfig: {fileID: 11400000, guid: d98f532474b838c478c510c5a91fd8c4, type: 2}
+  idleConfig: {fileID: 11400000, guid: da9239aaa2e692c47a691b490f89d14e, type: 2}
   roamConfig: {fileID: 11400000, guid: 892aff830cc518c42a427fd2d4dbd1ba, type: 2}
   smokingConfig: {fileID: 11400000, guid: 2bfc3a2b807397149a85d3a60c616938, type: 2}
   talkingConfig: {fileID: 11400000, guid: bb1e95f244fdfce43a362107441e8b60, type: 2}
+--- !u!114 &2131575129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131575116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32681598ccaf75a49ac4798dc4bd82db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCStateDebugIndicator
+  stateMachine: {fileID: 0}
+  worldOffset: {x: 0, y: 2.2, z: 0}
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &7334314325956891852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9966,6 +10737,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1523129123}
+    - targetCorrespondingSourceObject: {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1523129135}
   m_SourcePrefab: {fileID: 100100000, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -16,6 +16,7 @@ public class NPCStateMachine : MonoBehaviour
 
     private NPCState currentState;
     private int destinationsVisitedSinceLastStationary = 0;
+    public string CurrentStateName => currentState != null ? currentState.GetType().Name : "None";
 
     public NPCIdleState IdleState { get; private set; }
     public NPCRoamState RoamState { get; private set; }
@@ -44,7 +45,6 @@ public class NPCStateMachine : MonoBehaviour
 
     private void Start()
     {
-        animator.applyRootMotion = false;
         ChangeState(RoamState);
     }
 

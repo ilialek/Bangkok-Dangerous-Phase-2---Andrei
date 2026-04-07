@@ -6,8 +6,11 @@ public class NPCRoamState : NPCState
 
     public override void Enter()
     {
-        stateMachine.Animator.applyRootMotion = false;
         stateMachine.Agent.isStopped = false;
+
+        stateMachine.Animator.ResetTrigger("Smoke");
+        stateMachine.Animator.ResetTrigger("Idle");
+        stateMachine.Animator.ResetTrigger("Talk");
 
         if (stateMachine.TryGetRandomRoamPoint(out Vector3 destination))
         {
