@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -16,6 +17,7 @@ public class NPCStateMachine : MonoBehaviour
 
     private NPCState currentState;
     private int destinationsVisitedSinceLastStationary = 0;
+
     public string CurrentStateName => currentState != null ? currentState.GetType().Name : "None";
 
     public NPCIdleState IdleState { get; private set; }
@@ -32,20 +34,37 @@ public class NPCStateMachine : MonoBehaviour
     public NPCSmokingStateConfig SmokingConfig => smokingConfig;
     public NPCTalkingStateConfig TalkingConfig => talkingConfig;
 
+    public bool CanIdle => idleConfig != null;
+    public bool CanRoam => roamConfig != null;
+    public bool CanSmoke => smokingConfig != null;
+    public bool CanTalk => talkingConfig != null;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
 
-        IdleState = new NPCIdleState(this);
-        RoamState = new NPCRoamState(this);
-        SmokingState = new NPCSmokingState(this);
-        TalkingState = new NPCTalkingState(this);
+        if (CanIdle) IdleState = new NPCIdleState(this);
+
+        if (CanRoam) RoamState = new NPCRoamState(this);
+
+        if (CanSmoke) SmokingState = new NPCSmokingState(this);
+
+        if (CanTalk) TalkingState = new NPCTalkingState(this);
     }
 
     private void Start()
     {
-        ChangeState(RoamState);
+        NPCState startingState = GetStartingState();
+
+        if (startingState == null)
+        {
+            Debug.LogWarning($"{name} has no NPC state configs assigned.", this);
+            enabled = false;
+            return;
+        }
+
+        ChangeState(startingState);
     }
 
     private void Update()
@@ -56,9 +75,29 @@ public class NPCStateMachine : MonoBehaviour
 
     public void ChangeState(NPCState newState)
     {
+        if (newState == null)
+        {
+            Debug.LogWarning($"{name} tried to change to a null NPC state.", this);
+            return;
+        }
+
         currentState?.Exit();
+
         currentState = newState;
         currentState.Enter();
+    }
+
+    private NPCState GetStartingState()
+    {
+        if (CanRoam)
+            return RoamState;
+
+        List<NPCState> availableStates = GetAvailableStationaryStates();
+
+        if (availableStates.Count == 0)
+            return null;
+
+        return availableStates[Random.Range(0, availableStates.Count)];
     }
 
     public Vector3 GetRoamOrigin()
@@ -69,6 +108,9 @@ public class NPCStateMachine : MonoBehaviour
     public bool TryGetRandomRoamPoint(out Vector3 point)
     {
         point = Vector3.zero;
+
+        if (!CanRoam)
+            return false;
 
         Vector3 origin = GetRoamOrigin();
 
@@ -125,50 +167,84 @@ public class NPCStateMachine : MonoBehaviour
 
         if (roll <= chance)
         {
-            ChangeState(GetRandomSoloStationaryState());
+            NPCState stationaryState = GetRandomAvailableStationaryState();
+
+            if (stationaryState != null)
+            {
+                ChangeState(stationaryState);
+                return;
+            }
         }
-        else
-        {
-            ChangeState(RoamState);
-        }
+
+        ChangeState(RoamState);
     }
 
     public void NotifyStationaryStateFinished()
     {
         destinationsVisitedSinceLastStationary = 0;
-        ChangeState(RoamState);
+
+        if (CanRoam)
+        {
+            ChangeState(RoamState);
+            return;
+        }
+
+        NPCState nextStationaryState = GetRandomAvailableStationaryState();
+
+        if (nextStationaryState != null)
+            ChangeState(nextStationaryState);
     }
 
     private bool CanEnterStationaryState()
     {
+        if (!CanRoam)
+            return false;
+
+        if (GetAvailableStationaryStates().Count == 0)
+            return false;
+
         return destinationsVisitedSinceLastStationary >= roamConfig.minDestinationsBeforeStationary;
     }
 
     private float GetCurrentStationaryChance()
     {
+        if (!CanRoam)
+            return 0f;
+
         int extraDestinations =
             destinationsVisitedSinceLastStationary - roamConfig.minDestinationsBeforeStationary;
 
         float chance =
             roamConfig.baseStationaryChance +
-            (extraDestinations * roamConfig.stationaryChanceMultiplier);
+            extraDestinations * roamConfig.stationaryChanceMultiplier;
 
         return Mathf.Clamp01(chance);
     }
 
-    private NPCState GetRandomSoloStationaryState()
+    private NPCState GetRandomAvailableStationaryState()
     {
-        float totalWeight = roamConfig.idleWeight + roamConfig.smokingWeight;
+        List<NPCState> availableStates = GetAvailableStationaryStates();
 
-        if (totalWeight <= 0f)
-            return IdleState;
+        if (availableStates.Count == 0)
+            return null;
 
-        float roll = Random.value * totalWeight;
+        return availableStates[Random.Range(0, availableStates.Count)];
+    }
 
-        if (roll < roamConfig.idleWeight)
-            return IdleState;
+    private List<NPCState> GetAvailableStationaryStates()
+    {
+        List<NPCState> states = new List<NPCState>();
 
-        return SmokingState;
+        if (CanIdle)
+            states.Add(IdleState);
+
+        if (CanSmoke)
+            states.Add(SmokingState);
+
+        if (CanTalk)
+            states.Add(TalkingState);
+
+        return states;
     }
 
     private void UpdateAnimator()

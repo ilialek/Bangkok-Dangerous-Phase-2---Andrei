@@ -22,7 +22,7 @@ public class NPCTalkingState : NPCStationaryState
         
         if (IsTimerFinished())
         {
-            stateMachine.ChangeState(stateMachine.RoamState);
+            stateMachine.NotifyStationaryStateFinished();
         }
     }
 }

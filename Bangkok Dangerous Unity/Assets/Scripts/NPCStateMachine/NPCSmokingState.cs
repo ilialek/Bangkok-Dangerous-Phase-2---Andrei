@@ -20,7 +20,7 @@ public class NPCSmokingState : NPCStationaryState
 
         if (IsTimerFinished())
         {
-            stateMachine.ChangeState(stateMachine.RoamState);
+            stateMachine.NotifyStationaryStateFinished();
         }
     }
 }

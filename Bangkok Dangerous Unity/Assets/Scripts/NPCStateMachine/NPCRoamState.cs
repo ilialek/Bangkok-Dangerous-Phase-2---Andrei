@@ -18,7 +18,7 @@ public class NPCRoamState : NPCState
         }
         else
         {
-            stateMachine.ChangeState(stateMachine.IdleState);
+            stateMachine.NotifyStationaryStateFinished();
         }
     }
 
