@@ -14,5 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCRoamStateConfig
   roamRadius: 100
   maxSampleAttempts: 10
-  navMeshSampleDistance: 1
-  MinEdgeDistance: 0.75
+  navMeshSampleDistance: 2
+  maxSnapDistance: 0.75
+  minDistanceFromNavMeshEdge: 2.5
+  minDestinationsBeforeStationary: 2
+  baseStationaryChance: 0.25
+  stationaryChanceMultiplier: 0.1
+  idleWeight: 1
+  smokingWeight: 1
+  talkingWeight: 1

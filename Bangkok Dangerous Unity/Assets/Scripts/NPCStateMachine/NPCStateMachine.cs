@@ -109,9 +109,6 @@ public class NPCStateMachine : MonoBehaviour
     {
         point = Vector3.zero;
 
-        if (!CanRoam)
-            return false;
-
         Vector3 origin = GetRoamOrigin();
 
         for (int i = 0; i < roamConfig.maxSampleAttempts; i++)
@@ -119,17 +116,34 @@ public class NPCStateMachine : MonoBehaviour
             Vector2 random2D = Random.insideUnitCircle * roamConfig.roamRadius;
             Vector3 candidate = origin + new Vector3(random2D.x, 0f, random2D.y);
 
-            if (NavMesh.SamplePosition(candidate, out NavMeshHit hit, roamConfig.navMeshSampleDistance, NavMesh.AllAreas))
+            if (!NavMesh.SamplePosition(
+                    candidate,
+                    out NavMeshHit hit,
+                    roamConfig.navMeshSampleDistance,
+                    NavMesh.AllAreas))
             {
-                if (NavMesh.FindClosestEdge(hit.position, out NavMeshHit edgeHit, NavMesh.AllAreas))
-                {
-                    if (edgeHit.distance >= roamConfig.MinEdgeDistance)
-                    {
-                        point = hit.position;
-                        return true;
-                    }
-                }
+                continue;
             }
+
+            float snapDistance = Vector3.Distance(candidate, hit.position);
+
+            if (snapDistance > roamConfig.maxSnapDistance)
+            {
+                continue;
+            }
+
+            if (!NavMesh.FindClosestEdge(hit.position, out NavMeshHit edgeHit, NavMesh.AllAreas))
+            {
+                continue;
+            }
+
+            if (edgeHit.distance < roamConfig.minDistanceFromNavMeshEdge)
+            {
+                continue;
+            }
+
+            point = hit.position;
+            return true;
         }
 
         return false;
