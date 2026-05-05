@@ -27,9 +27,11 @@ public class NPCSpawnManager : MonoBehaviour
     [SerializeField] private float navMeshSampleDistance = 3f;
     [SerializeField] private float minDistanceFromNavMeshEdge = 0.75f;
 
-    [Header("Visibility Settings")]
+    [Header("Visibility / Occlusion Settings")]
     [SerializeField] private bool preventSpawningInCameraView = true;
     [SerializeField] private float cameraViewPadding = 0.1f;
+    [SerializeField] private LayerMask occlusionLayerMask;
+    [SerializeField] private float visibilityCheckHeight = 1.6f;
 
     private readonly List<GameObject> activeNPCs = new List<GameObject>();
     private float nextSpawnCheckTime;
@@ -103,7 +105,7 @@ public class NPCSpawnManager : MonoBehaviour
             return false;
         }
 
-        if (preventSpawningInCameraView && IsPointVisibleToCamera(hit.position))
+        if (preventSpawningInCameraView && IsSpawnPointVisible(hit.position))
         {
             return false;
         }
@@ -112,22 +114,32 @@ public class NPCSpawnManager : MonoBehaviour
         return true;
     }
 
-    private bool IsPointVisibleToCamera(Vector3 point)
+    private bool IsSpawnPointVisible(Vector3 spawnPoint)
     {
-        if (playerCamera == null)
+        Vector3 checkPoint = spawnPoint + Vector3.up * visibilityCheckHeight;
+        Vector3 viewerPoint = playerCamera.WorldToViewportPoint(checkPoint);
+
+        bool isInFrontOfCamera = viewerPoint.z > 0;
+
+        bool isInsideView = 
+            viewerPoint.x > -cameraViewPadding &&
+            viewerPoint.x < 1f + cameraViewPadding &&
+            viewerPoint.y > -cameraViewPadding &&
+            viewerPoint.y < 1f + cameraViewPadding;
+
+        if (!isInFrontOfCamera || !isInsideView)
             return false;
 
-        Vector3 viewportPoint = playerCamera.WorldToViewportPoint(point);
+        Vector3 cameraPosition = playerCamera.transform.position;
+        Vector3 direction = checkPoint - cameraPosition;
+        float distanceToPoint = direction.magnitude;
 
-        bool isInFrontOfCamera = viewportPoint.z > 0f;
+        if (Physics.Raycast(cameraPosition, direction.normalized, out RaycastHit hitInfo, distanceToPoint, occlusionLayerMask, QueryTriggerInteraction.Ignore))
+        {
+            return false;
+        }
 
-        bool isInsideView =
-            viewportPoint.x > -cameraViewPadding &&
-            viewportPoint.x < 1f + cameraViewPadding &&
-            viewportPoint.y > -cameraViewPadding &&
-            viewportPoint.y < 1f + cameraViewPadding;
-
-        return isInFrontOfCamera && isInsideView;
+        return true;
     }
 
     private void SpawnNPC(Vector3 position)
