@@ -109,6 +109,8 @@ public class NPCStateMachine : MonoBehaviour
     {
         point = Vector3.zero;
 
+        if (!CanRoam) return false;
+
         Vector3 origin = GetRoamOrigin();
 
         for (int i = 0; i < roamConfig.maxSampleAttempts; i++)

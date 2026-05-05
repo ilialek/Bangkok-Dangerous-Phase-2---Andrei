@@ -16,7 +16,7 @@ MonoBehaviour:
   maxSampleAttempts: 10
   navMeshSampleDistance: 2
   maxSnapDistance: 0.75
-  minDistanceFromNavMeshEdge: 2.5
+  minDistanceFromNavMeshEdge: 1
   minDestinationsBeforeStationary: 2
   baseStationaryChance: 0.25
   stationaryChanceMultiplier: 0.1
