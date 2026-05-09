@@ -346,6 +346,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 848ba6a2b41f5d447b52c24e5c7bf23d, type: 2}
+<<<<<<< HEAD
+=======
+  maxHealth: 100
+  currentHealth: 0
+  maxStamina: 100
+  staminaLoseRate: 10
+  armor: 0
+  superArmor: 0
+>>>>>>> 938a8e6 (3 test enemy combat implementations)
   maxMoveSpeed: 6
   turnSpeed: 8
   parameterSmoothTime: 0.1

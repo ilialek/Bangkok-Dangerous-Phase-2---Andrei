@@ -78,6 +78,12 @@ public class Player : MonoBehaviour
 
     private void InitizalizeData(PlayerData pData)
     {
+        if (pData == null)
+        {
+            Debug.LogError($"{nameof(Player)} is missing {nameof(PlayerData)} on {name}. Assign a PlayerData asset in the inspector.", this);
+            return;
+        }
+
         maxHealth = pData.maxHealth;
         currentHealth = maxHealth;
         maxHeat = pData.maxHeat;

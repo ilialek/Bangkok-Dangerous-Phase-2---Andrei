@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44524598826d7044e9fff8a56151a82f, type: 3}
+  m_Name: Enemy BT 1_btgraph
+  m_EditorClassIdentifier: 
+  entryNodeGUID: f1efd734-bcf8-4bc8-8e52-19f262c9e641
+  nodeData:
+  - GUID: 144bd893-9ca1-4985-9bff-23c94431e863
+    name: Selector
+    type: 3
+    random: 0
+    loopThroughAll: 1
+    inverted: 0
+    position: {x: 256, y: 200}
+    leafMethod: 
+  - GUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    name: Sequence
+    type: 2
+    random: 0
+    loopThroughAll: 1
+    inverted: 0
+    position: {x: 559, y: 200}
+    leafMethod: 
+  - GUID: 638dbfd2-1cfb-4417-a8af-cab68b3e545f
+    name: Selector
+    type: 3
+    random: 0
+    loopThroughAll: 1
+    inverted: 0
+    position: {x: 890.5, y: 325}
+    leafMethod: 
+  - GUID: f0fcd5e9-e445-4524-a047-a90619624b98
+    name: Is Player In Detection Range
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 890.5, y: 140}
+    leafMethod: IsPlayerInDetectionRange
+  - GUID: 79721fe6-168e-4f4a-b82c-cbccc0db5b5e
+    name: Register With Combat Director
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 890.5, y: 226}
+    leafMethod: RegisterWithCombatDirector
+  - GUID: 47635791-03d6-451b-b2d3-3bfed5d86c02
+    name: Has Player
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 890.5, y: 52}
+    leafMethod: HasPlayer
+  - GUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    name: Sequence
+    type: 2
+    random: 0
+    loopThroughAll: 1
+    inverted: 0
+    position: {x: 1186.5, y: 325}
+    leafMethod: 
+  - GUID: ff80e097-4dad-42ed-a651-7b53f16acafb
+    name: Can Request Attack
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 105.5}
+    leafMethod: CanRequestAttack
+  - GUID: 0fb46927-26b0-4581-9535-5ce1e91c800a
+    name: Request Attack Permission
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 191.5}
+    leafMethod: RequestAttackPermission
+  - GUID: 8f9e83f0-6bbf-4a6b-837f-62a839190ca8
+    name: Move Into Attack Range
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 278}
+    leafMethod: MoveIntoAttackRange
+  - GUID: d159ce5f-e0b3-4790-a41a-dd6bde016940
+    name: Face Player
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 367}
+    leafMethod: FacePlayer
+  - GUID: 82b5ddb0-ffd5-44e0-8f5a-e944d4aa50f6
+    name: Start Attack
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 450}
+    leafMethod: StartAttack
+  - GUID: f155298c-ade8-4a48-bbea-b76cdb5148a3
+    name: Release Attack Permission
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 614}
+    leafMethod: ReleaseAttackPermission
+  - GUID: bedaa706-e1ef-4fd7-83d8-1bf3343aed80
+    name: Recover
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 691}
+    leafMethod: Recover
+  - GUID: 872cac56-2aad-417f-a736-25515e6983bd
+    name: Is Attack Finished
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1555, y: 537}
+    leafMethod: IsAttackFinished
+  - GUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    name: Sequence
+    type: 2
+    random: 0
+    loopThroughAll: 1
+    inverted: 0
+    position: {x: 1186.5, y: 844.5}
+    leafMethod: 
+  - GUID: 277bce44-d36d-4242-a681-bede859c974d
+    name: Claim Or Update Combat Slot
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1500, y: 789}
+    leafMethod: ClaimOrUpdateCombatSlot
+  - GUID: a6849398-f07a-4d59-bfc9-cf78d3ac9653
+    name: Move To Combat Slot
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1500, y: 866}
+    leafMethod: MoveToCombatSlot
+  - GUID: e97f5c16-8f0f-4b37-a670-32cfa5b7ab9c
+    name: Pressure Move
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1500, y: 943}
+    leafMethod: PressureMove
+  - GUID: 412e3c67-f643-441d-b53b-670843948db2
+    name: Face Player
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 1500, y: 1020}
+    leafMethod: FacePlayer
+  - GUID: bc77f7f4-0374-40eb-bc04-abb757294d9e
+    name: Sequence
+    type: 2
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 559, y: 519}
+    leafMethod: 
+  - GUID: f86d20be-cc1f-4926-984c-855b446eade6
+    name: Idle
+    type: 1
+    random: 0
+    loopThroughAll: 0
+    inverted: 0
+    position: {x: 832.5, y: 519}
+    leafMethod: Idle
+  nodeLinks:
+  - baseNodeGUID: f1efd734-bcf8-4bc8-8e52-19f262c9e641
+    outputPortIndex: 0
+    portName: Start
+    targetNodeGUID: 144bd893-9ca1-4985-9bff-23c94431e863
+    inputPortIndex: 0
+  - baseNodeGUID: 144bd893-9ca1-4985-9bff-23c94431e863
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    inputPortIndex: 0
+  - baseNodeGUID: 144bd893-9ca1-4985-9bff-23c94431e863
+    outputPortIndex: 1
+    portName: Child 1
+    targetNodeGUID: bc77f7f4-0374-40eb-bc04-abb757294d9e
+    inputPortIndex: 0
+  - baseNodeGUID: bc77f7f4-0374-40eb-bc04-abb757294d9e
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: f86d20be-cc1f-4926-984c-855b446eade6
+    inputPortIndex: 0
+  - baseNodeGUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: 47635791-03d6-451b-b2d3-3bfed5d86c02
+    inputPortIndex: 0
+  - baseNodeGUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    outputPortIndex: 1
+    portName: Child 1
+    targetNodeGUID: f0fcd5e9-e445-4524-a047-a90619624b98
+    inputPortIndex: 0
+  - baseNodeGUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    outputPortIndex: 2
+    portName: Child 2
+    targetNodeGUID: 79721fe6-168e-4f4a-b82c-cbccc0db5b5e
+    inputPortIndex: 0
+  - baseNodeGUID: 721b092d-b23d-44b2-a9bd-53aa0307ad3e
+    outputPortIndex: 3
+    portName: Child 3
+    targetNodeGUID: 638dbfd2-1cfb-4417-a8af-cab68b3e545f
+    inputPortIndex: 0
+  - baseNodeGUID: 638dbfd2-1cfb-4417-a8af-cab68b3e545f
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    inputPortIndex: 0
+  - baseNodeGUID: 638dbfd2-1cfb-4417-a8af-cab68b3e545f
+    outputPortIndex: 1
+    portName: Child 1
+    targetNodeGUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: ff80e097-4dad-42ed-a651-7b53f16acafb
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 1
+    portName: Child 1
+    targetNodeGUID: 0fb46927-26b0-4581-9535-5ce1e91c800a
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 2
+    portName: Child 2
+    targetNodeGUID: 8f9e83f0-6bbf-4a6b-837f-62a839190ca8
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 3
+    portName: Child 3
+    targetNodeGUID: d159ce5f-e0b3-4790-a41a-dd6bde016940
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 4
+    portName: Child 4
+    targetNodeGUID: 82b5ddb0-ffd5-44e0-8f5a-e944d4aa50f6
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 5
+    portName: Child 5
+    targetNodeGUID: 872cac56-2aad-417f-a736-25515e6983bd
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 6
+    portName: Child 6
+    targetNodeGUID: f155298c-ade8-4a48-bbea-b76cdb5148a3
+    inputPortIndex: 0
+  - baseNodeGUID: c02ede6e-5dab-4802-b087-901ad51f624c
+    outputPortIndex: 7
+    portName: Child 7
+    targetNodeGUID: bedaa706-e1ef-4fd7-83d8-1bf3343aed80
+    inputPortIndex: 0
+  - baseNodeGUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    outputPortIndex: 0
+    portName: Child 0
+    targetNodeGUID: 277bce44-d36d-4242-a681-bede859c974d
+    inputPortIndex: 0
+  - baseNodeGUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    outputPortIndex: 1
+    portName: Child 1
+    targetNodeGUID: a6849398-f07a-4d59-bfc9-cf78d3ac9653
+    inputPortIndex: 0
+  - baseNodeGUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    outputPortIndex: 2
+    portName: Child 2
+    targetNodeGUID: e97f5c16-8f0f-4b37-a670-32cfa5b7ab9c
+    inputPortIndex: 0
+  - baseNodeGUID: 492f15a8-81e6-4d19-82c1-3e243b579b8b
+    outputPortIndex: 3
+    portName: Child 3
+    targetNodeGUID: 412e3c67-f643-441d-b53b-670843948db2
+    inputPortIndex: 0
