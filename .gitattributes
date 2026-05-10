@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 Bangkok\ Dangerous\ Unity/Assets/Scenes/Gedas's\ Playground.unity filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
