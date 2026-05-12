@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxMoveSpeed = 6f;
     [SerializeField] private float turnSpeed = 8f;
     [SerializeField] private float parameterSmoothTime = 0.1f;
-    
+    [SerializeField] public bool PlayerCanMove;
+
     [Header("Combat Movement")]
     [SerializeField] private float combatMoveSpeed = 6f;
     [SerializeField] private float combatParameterSmoothTime = 0.15f;
@@ -112,12 +113,29 @@ public class Player : MonoBehaviour
     {
         playerInput.enabled = true;
         InitizalizeData(data);
+        PlayerCanMove = true;
     }
 
     private void FixedUpdate()
     {
-        HandleMove();
-        HandleCombatStateTransitions();
+        if (PlayerCanMove)
+        {
+            HandleMove();
+            HandleCombatStateTransitions();
+        }
+        else
+        {
+            // Reset animator parameters so they don't look like they are running
+            currentSpeedParam = 0;
+            currentTurnParam = 0;
+            currentCombatX = 0;
+            currentCombatY = 0;
+
+            animator.SetFloat("Speed", 0);
+            animator.SetFloat("Turn", 0);
+            animator.SetFloat("Combat X", 0);
+            animator.SetFloat("Combat Y", 0);
+        }
     }
 
     private void OnDisable()
@@ -191,6 +209,8 @@ public class Player : MonoBehaviour
             HandleNormalMovement();
         }
     }
+
+
 
     /// <summary>
     /// Handles normal camera-relative movement.
