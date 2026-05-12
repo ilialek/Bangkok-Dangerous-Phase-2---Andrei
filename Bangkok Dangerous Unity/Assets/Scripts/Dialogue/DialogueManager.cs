@@ -23,8 +23,6 @@ public class DialogueManager : MonoBehaviour
     private bool dialoguePlaying = false;
     public bool canContinueToNextLine = false;
 
-    private InkExternalFunctions inkExternalFunctions;
-    private InkDialogueVariables inkDialogueVariables;
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
@@ -34,24 +32,15 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         story = new Story(inkJson.text);
-        inkExternalFunctions = new InkExternalFunctions();
-        inkExternalFunctions.Bind(story);
-        inkDialogueVariables = new InkDialogueVariables(story);
-
         if (_playerRef == null ) _playerRef = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void OnDestroy()
-    {
-        inkExternalFunctions.Unbind(story);
-    }
 
     private void OnEnable()
     {
         GameEventsManager.instance.dialogueEvents.onEnterDialogue += EnterDialogue;
         GameEventsManager.instance.inputEvents.onSubmitPressed += SubmitPressed;
         GameEventsManager.instance.dialogueEvents.onUpdateChoiceIndex += UpdateChoiceIndex;
-        GameEventsManager.instance.dialogueEvents.onUpdateInkDialogueVariable += UpdateInkDialogueVariable;
         //GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
     }
 
@@ -60,7 +49,6 @@ public class DialogueManager : MonoBehaviour
         GameEventsManager.instance.dialogueEvents.onEnterDialogue -= EnterDialogue;
         GameEventsManager.instance.inputEvents.onSubmitPressed -= SubmitPressed;
         GameEventsManager.instance.dialogueEvents.onUpdateChoiceIndex -= UpdateChoiceIndex;
-        GameEventsManager.instance.dialogueEvents.onUpdateInkDialogueVariable -= UpdateInkDialogueVariable;
         //GameEventsManager.instance.questEvents.onQuestStateChange -= QuestStateChange;
     }
 
@@ -77,10 +65,6 @@ public class DialogueManager : MonoBehaviour
     }
     */
 
-    private void UpdateInkDialogueVariable(string name, Ink.Runtime.Object value)
-    {
-        inkDialogueVariables.UpdateVariableState(name, value);
-    }
 
     private void UpdateChoiceIndex(int choiceIndex)
     {
@@ -133,10 +117,6 @@ public class DialogueManager : MonoBehaviour
         portraitAnimator.Play("default");
         layoutAnimator.Play("right");
 
-
-
-        // start listening for variables
-        inkDialogueVariables.SyncVariablesAndStartListening(story);
 
         // kick off the story
         ContinueOrExitStory();
@@ -229,9 +209,6 @@ public class DialogueManager : MonoBehaviour
 
         // input event context
         GameEventsManager.instance.inputEvents.ChangeInputEventContext(InputEventContext.DEFAULT);
-
-        // stop listening for dialogue variables
-        inkDialogueVariables.StopListening(story);
 
         // reset story state
         story.ResetState();
