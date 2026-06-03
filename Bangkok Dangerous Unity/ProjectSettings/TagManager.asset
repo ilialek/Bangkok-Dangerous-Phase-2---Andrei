@@ -17,9 +17,9 @@ TagManager:
   - UI
   - Combat
   - TakeDamage
-  - Building
-  - 
-  - 
+  - Enemy
+  - Walkable
+  - BuildingOcclusionMask
   - 
   - 
   - 

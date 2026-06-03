@@ -41,7 +41,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.96
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       propertyPath: m_LocalPosition.y
@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.48999977
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       propertyPath: m_LocalRotation.w
@@ -117,12 +117,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6054631299051429253}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1621006114389472969}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7439519313499472403}
     - targetCorrespondingSourceObject: {fileID: -6170625038081293824, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4322855817050471899}
@@ -346,15 +340,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 848ba6a2b41f5d447b52c24e5c7bf23d, type: 2}
-<<<<<<< HEAD
-=======
   maxHealth: 100
   currentHealth: 0
   maxStamina: 100
   staminaLoseRate: 10
   armor: 0
   superArmor: 0
->>>>>>> 938a8e6 (3 test enemy combat implementations)
   maxMoveSpeed: 6
   turnSpeed: 8
   parameterSmoothTime: 0.1
@@ -461,7 +452,6 @@ MonoBehaviour:
     m_Bits: 64
   lockOnRange: 15
   lockOnAngle: 60
-  autoLockOnRange: 5
   playerTransform: {fileID: 9072796013727858668}
   cameraTransform: {fileID: 0}
   characterRotationSpeed: 8
@@ -500,50 +490,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1621006114389472969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8548636157995672918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: def269efba2a2e44db5c7af5008b4550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCLookAtTarget
-  target: {fileID: 0}
-  lookChance: 0.3
-  lookDuration: 1.5
-  lookBlendSpeed: 3
-  maxLookAngle: 60
-  lookOffset: {x: 0, y: 1.5, z: 0}
-  overallWeight: 1
-  bodyWeight: 0.15
-  headWeight: 1
-  eyesWeight: 0
-  clampWeight: 0.6
---- !u!135 &7439519313499472403
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8548636157995672918}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 2
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &9072796013727858668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2f78b4c41c06aeb4682ecd0fa6a49a61, type: 3}
