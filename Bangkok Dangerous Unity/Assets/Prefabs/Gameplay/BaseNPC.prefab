@@ -2038,6 +2038,7 @@ GameObject:
   - component: {fileID: 6975204085827412679}
   - component: {fileID: 6717777313896281226}
   - component: {fileID: 6787770483390623015}
+  - component: {fileID: -1570073777122065617}
   - component: {fileID: -8284356235414965069}
   m_Layer: 6
   m_Name: BaseNPC
@@ -2269,6 +2270,22 @@ MonoBehaviour:
   stateMachine: {fileID: 6717777313896281226}
   worldOffset: {x: 0, y: 2.2, z: 0}
   labelColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &-1570073777122065617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930752882633895449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3edbe4fe6e588e47b18ebaa483a8264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDangerResponder
+  fleeDistance: 14
+  fleeSpeed: 3.5
+  checkInterval: 0.25
+  reachedSafeDistance: 1
 --- !u!114 &-8284356235414965069
 MonoBehaviour:
   m_ObjectHideFlags: 0

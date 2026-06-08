@@ -330,6 +330,12 @@ public class BT1CombatAgent : BTAgent
         attackStartTime = Time.time;
         lastAttackTime = Time.time;
 
+        if (GameEventsManager.instance != null && GameEventsManager.instance.combatEvents != null)
+        {
+            Vector3 fightOrigin = player != null ? player.position : transform.position;
+            GameEventsManager.instance.combatEvents.FightStarted(fightOrigin);
+        }
+
         if (combatContext != null)
         {
             combatContext.MarkAttackPerformed();

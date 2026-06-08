@@ -144,6 +144,11 @@ public class NPCStateMachine : MonoBehaviour
                 continue;
             }
 
+            if (NPCDangerZoneManager.Instance != null && NPCDangerZoneManager.Instance.IsInsideDangerZone(hit.position))
+            {
+                continue;
+            }
+
             point = hit.position;
             return true;
         }

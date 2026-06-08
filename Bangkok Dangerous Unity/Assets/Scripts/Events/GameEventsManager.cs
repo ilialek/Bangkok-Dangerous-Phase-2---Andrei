@@ -8,6 +8,7 @@ public class GameEventsManager : MonoBehaviour
     public PlayerEvents playerEvents;
     public InputEvents inputEvents;
     public DialogueEvents dialogueEvents;
+    public CombatEvents combatEvents;
 
     private void Awake()
     {
@@ -21,5 +22,6 @@ public class GameEventsManager : MonoBehaviour
         playerEvents = new PlayerEvents();
         dialogueEvents = new DialogueEvents();
         inputEvents = new InputEvents();
+        combatEvents = new CombatEvents();
     }
 }
