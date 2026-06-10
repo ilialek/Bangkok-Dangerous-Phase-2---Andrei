@@ -1664,12 +1664,12 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   npcPrefabs:
   - {fileID: 6930752882633895449, guid: 2be8798a8d734784c9e05eb755cfccdc, type: 3}
-  maxActiveNPCs: 50
+  maxActiveNPCs: 10
   spawnCheckInterval: 1
-  spawnAttemptsPerCheck: 25
-  minSpawnDistance: 20
-  maxSpawnDistance: 70
-  despawnDistance: 80
+  spawnAttemptsPerCheck: 10
+  minSpawnDistance: 15
+  maxSpawnDistance: 35
+  despawnDistance: 50
   navMeshSampleDistance: 1
   minDistanceFromNavMeshEdge: 0.75
   preventSpawningInCameraView: 1
@@ -1678,6 +1678,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   visibilityCheckHeight: 1.6
+  enableTestLogs: 1
+  logRejectedSpawnAttempts: 1
+  logSummary: 1
+  summaryInterval: 10
 --- !u!4 &403121076
 Transform:
   m_ObjectHideFlags: 0

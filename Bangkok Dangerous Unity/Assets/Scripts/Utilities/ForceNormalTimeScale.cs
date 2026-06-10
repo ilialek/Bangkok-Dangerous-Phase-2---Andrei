@@ -11,27 +11,27 @@ public class ForceNormalTimeScale : MonoBehaviour
     {
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
-        Debug.Log("ForceNormalTimeScale - BEFORE SCENE: Set Time.timeScale to 1");
+        //Debug.Log("ForceNormalTimeScale - BEFORE SCENE: Set Time.timeScale to 1");
     }
     
     private void Awake()
     {
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
-        Debug.Log("ForceNormalTimeScale - AWAKE: Set Time.timeScale to 1");
+        //Debug.Log("ForceNormalTimeScale - AWAKE: Set Time.timeScale to 1");
     }
 
     private void Start()
     {
         if (Time.timeScale != 1f)
         {
-            Debug.LogError($"ForceNormalTimeScale - START: Time.timeScale was {Time.timeScale}! Forcing to 1");
+            //Debug.LogError($"ForceNormalTimeScale - START: Time.timeScale was {Time.timeScale}! Forcing to 1");
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
         }
         else
         {
-            Debug.Log("ForceNormalTimeScale - START: Time.timeScale is correctly at 1");
+            //Debug.Log("ForceNormalTimeScale - START: Time.timeScale is correctly at 1");
         }
     }
 }
